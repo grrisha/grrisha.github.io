@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    font-family: ;
+    font-size: ;
+    line-height: ;
+    font-weight: ;
+    color: ;
+    background-color: white;
+}
+
+a {
+    color: ;
+    transition: color 0.2s;
+
+    &:hover {
+        color: black;
+    }
+
+    &:active {
+        color: #e5e5e5;
+    }
+}
