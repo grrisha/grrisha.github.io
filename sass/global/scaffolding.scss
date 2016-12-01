@@ -11,22 +11,56 @@ html {
 body {
     //min-width: 320px;
     //font-family: ;
-    //font-size: ;
-    //line-height: ;
-    //font-weight: ;
-    //color: ;
-    //background-color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $text;
+    background-color: white;
 }
 
 a {
-    //color: ;
+    color: $link;
     transition: color 0.2s;
 
     &:hover {
-        color: black;
+        text-style: italic;
     }
 
-    &:active {
-        color: #e5e5e5;
-    }
+    //&:active {
+    //    color: black;
+    //}
+}
+
+section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    min-height: 590px;
+    overflow: hidden;
+}
+
+.inner {
+    margin: auto;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 600;
+    color: #000;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+    color: $text;
+}
+
+.container {
+    @include container;
 }

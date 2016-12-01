@@ -13,24 +13,76 @@
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="index.html" class="navigation__link">Home</a>
+                        <a href="#about" class="navigation__link">Home</a>
                     </li>
                     <li class="navigation__item  navigation__item--active">
-                        <a href="works.html" class="navigation__link">Works</a>
+                        <a href="#works" class="navigation__link">Works</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="contacts.html" class="navigation__link">Contacts</a>
+                        <a href="#contacts" class="navigation__link">Contacts</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <main class="main-content">
-            <!-- begin about -->
-                <section class="about">
 
-                </section>
-            <!-- end about -->
+        <main class="main-content">
+            <div class="container">
+                    <section class="about" id="about">
+                        <div class="inner">
+                            <div class="container  container--xs">
+                                <h1 class="title">Джеймс Франко</h1>
+                                <p class="about__text">Я занимаюсь дизайном, потому что в остальном я еще хуже.</p>
+                                <img class="about__img" src="" alt="">
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="works-nav" id="works-nav">
+                        <div class="inner">
+                            <h2 class="subtitle">Selected works</h2>
+                            <a class="works-nav__item" href="hemp.html">
+                                <h3 class="works-nav__item-title">
+                                    Сделал доступнее доставку лекарственных растений
+                                </h3>
+                                <p class="works-nav__item-text">
+                                    <b>Hemp Express</b>,
+                                     IOS/Android, 2016
+                                </p>
+                            </a>
+                            <a class="works-nav__item" href="tikit.html">
+                                <h3 class="works-nav__item-title">Помог оплачивать штрафы за парковку быстрее</h3>
+                                <p class="works-nav__item-text">
+                                    <b>No-Tikit</b>,
+                                    IOS/Android, 2016
+                                </p>
+                            </a>
+                            <a class="works-nav__item" href="agent.html">
+                                <h3 class="works-nav__item-title">Развлёк нерешительных пользователей Вконтакте</h3>
+                                <p class="works-nav__item-text">
+                                    <b>Агент VK</b>,
+                                    IOS, 2016
+                                </p>
+                            </a>
+                        </div>
+                    </section>
+
+
+                    <section class="contacts" id="contacts">
+                        <div class="inner">
+                            <h2 class="subtitle">Еще кое-что</h2>
+                            <div class="container  container--xs">
+                                <p class="contacts__text">Для меня в дизайне важнее всего его функция. Когда продукт выполняет свою функцию, он приятен пользователю. Я учитываю контекст и целостность.</p>
+                                <p class="contacts__text">С технической стороны, все при мне - pixel perfect, atomic design, типографика, прототипы, анимация, иллюстрации, исследования. Еще я магистр психологии.</p>
+                            </div>
+                            <div class="links">
+                                <a href="" class="link">hellogrisha@gmail.com</a>
+                                <a href="" class="link">dribble</a>
+                            </div>
+                        </div>
+                    </section>
+            </div>
         </main>
 
         <!-- scripts -->
