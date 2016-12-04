@@ -1,0 +1,31 @@
+.works-nav {
+    margin-bottom: 50px;
+
+    &__item {
+        display: block;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+
+    &__item-title {
+        margin: 0 0 10px;
+        font-family: $font-secondary;
+        font-size: 2.155em;
+        line-height: 1.2;
+    }
+
+    &__item-text {
+        margin: 0;
+        font-size: 1em;
+    }
+
+
+    @media #{$tablet-width} {
+
+    }
+
+
+    @media #{$desktop-width} {
+
+    }
+}

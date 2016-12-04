@@ -1,6 +1,11 @@
 .navigation {
     @include container;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    left: 8.3%;
     color: $link;
+    background: #fff;
 
     &__list {
         margin: 0;
@@ -11,13 +16,37 @@
     &__item {
         display: inline-block;
         vertical-align: top;
-        font-size: 24px;
     }
 
     &__link {
-        text-decoration: none;
-        margin-right: 20px;
-        padding: 22px 0;
         display: block;
+        margin-right: 20px;
+        padding: 15px 10px;
+        font-family: $font-primary-medium;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            font-style: italic;
+        }
+
+        &:active {
+            color: #000;
+        }
+    }
+
+
+    @media #{$tablet-width} {
+
+        &__link {
+            padding: 22px 10px;
+        }
+    }
+
+
+    @media #{$desktop-width} {
+
     }
 }

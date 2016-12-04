@@ -1,26 +1,43 @@
+/* font-family: "SFCompactText-Bold"; */
 @font-face {
-    font-family: "Open Sans";
-    font-weight: 300;
+    font-family: "SFCompactText-Bold";
+    src: url("../font/SFCompactText-Bold.eot");
+    src: url("../font/SFCompactText-Bold.eot?#iefix")format("embedded-opentype"),
+    url("../font/SFCompactText-Bold.woff") format("woff"),
+    url("../font/SFCompactText-Bold.otf") format("opentype");
     font-style: normal;
-    src:
-        url("../fonts/opensanslight.woff2") format("woff2"),
-        url("../fonts/opensanslight.woff") format("woff"),
+    font-weight: normal;
 }
 
+/* font-family: "SFCompactText-Medium"; */
 @font-face {
-    font-family: "Open Sans";
-    font-weight: 400;
+    font-family: "SFCompactText-Medium";
+    src: url("../font/SFCompactText-Medium.eot");
+    src: url("../font/SFCompactText-Medium.eot?#iefix")format("embedded-opentype"),
+    url("../font/SFCompactText-Medium.woff") format("woff"),
+    url("../font/SFCompactText-Medium.otf") format("opentype");
     font-style: normal;
-    src:
-        url("../fonts/opensans.woff2") format("woff2"),
-        url("../fonts/opensans.woff") format("woff"),
+    font-weight: normal;
 }
 
+/* font-family: "SFCompactText-Regular"; */
 @font-face {
-    font-family: "Open Sans";
-    font-weight: 700;
+    font-family: "SFCompactText-Regular";
+    src: url("../font/SFCompactText-Regular.eot");
+    src: url("../font/SFCompactText-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../font/SFCompactText-Regular.woff") format("woff"),
+    url("../font/SFCompactText-Regular.otf") format("opentype");
     font-style: normal;
-    src:
-        url("../fonts/opensansbold.woff2") format("woff2"),
-        url("../fonts/opensansbold.woff") format("woff"),
+    font-weight: normal;
+}
+
+/* font-family: "SFCompactText-Semibold"; */
+@font-face {
+    font-family: "SFCompactText-Semibold";
+    src: url("../font/SFCompactText-Semibold.eot");
+    src: url("../font/SFCompactText-Semibold.eot?#iefix")format("embedded-opentype"),
+    url("../font/SFCompactText-Semibold.woff") format("woff"),
+    url("../font/SFCompactText-Semibold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
 }

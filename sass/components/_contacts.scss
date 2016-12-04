@@ -1,0 +1,32 @@
+.contacts {
+
+    &__links {
+        text-align: center;
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: 10px;
+        font-family: $font-primary-semibold;
+        text-transform: none;
+        font-size: 1.5em;
+    }
+
+
+    @media #{$tablet-width} {
+
+        &__links {
+            text-align: left;
+        }
+
+        &__text {
+            width: 80%;
+            margin: 0 auto 30px;
+        }
+    }
+
+
+    @media #{$desktop-width} {
+
+    }
+}
