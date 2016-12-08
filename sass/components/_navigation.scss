@@ -1,7 +1,5 @@
 .navigation {
     @include container;
-    position: fixed;
-    z-index: 200;
     width: 100%;
     left: 8.3%;
     color: $link;
@@ -27,6 +25,10 @@
         text-transform: uppercase;
         text-decoration: none;
 
+        &:first-child {
+            padding-left: 0;
+        }
+
         &:hover,
         &:focus {
             font-style: italic;
@@ -35,6 +37,11 @@
         &:active {
             color: #000;
         }
+    }
+
+    &__item--active &__link {
+        pointer-events: none;
+        color: #000;
     }
 
 

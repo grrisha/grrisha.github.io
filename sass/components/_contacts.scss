@@ -12,6 +12,12 @@
         font-size: 1.5em;
     }
 
+    &__text {
+        margin: 0 auto 2em;
+        font-family: $font-primary;
+        font-size: 1em;
+    }
+
 
     @media #{$tablet-width} {
 
@@ -21,7 +27,7 @@
 
         &__text {
             width: 80%;
-            margin: 0 auto 30px;
+            //margin: 0 auto 30px;
         }
     }
 

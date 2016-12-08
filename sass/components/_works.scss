@@ -7,24 +7,121 @@
         color: $link;
     }
 
+    &__title {
+        margin: 0 0 20px;
+        font-family: $font-secondary;
+        font-size: 2.155em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
     &__item-text {
+        margin-bottom: 30px;
+        font-family: $font-primary;
+        font-size: 1.6em;
+        line-height: 1.2;
+        color: $gray;
+
+        b {
+            font-size: $font-primary-semibold;
+        }
         span {
             display: block;
         }
     }
+
+    .clearfix {
+        margin-bottom: 35px;
+    }
+
+    &__logo {
+        width: initial;
+    }
+
+    &__about {
+        margin: 0;
+        font-family: $font-primary;
+        font-size: 1.2em;
+        line-height: 1.8;
+    }
+
+    &__text {
+        margin: 0 0 55px;
+        font-size: 1em;
+        line-height: 1.8;
+        color: $text;
+        font-family: $font-primary;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+
+    @media #{$mobile-width} {
+
+        .clearfix {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        &__about {
+            order: -1;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        &__logo {
+            display: block;
+            width: 165px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        &__text {
+            margin-bottom: 30px;
+        }
+
+        &__img {
+            margin-bottom: 20px;
+        }
+    }
+
 
     @media #{$tablet-width} {
 
 
         &__item-text,
         &__title {
-            width: 80%;
-            margin: 0 auto 30px;
+            margin-bottom: 55px;
+        }
+
+        &__logo {
+            float: left;
+            width: initial;
+            width: 190px;
+            height: auto;
+        }
+
+        &__about {
+            float: right;
+            width: calc(100% - 240px);
         }
     }
 
 
     @media #{$desktop-width} {
 
+        &__logo {
+            width: initial;
+        }
+
+        &__about {
+            width: calc(100% - 260px);
+        }
     }
 }

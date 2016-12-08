@@ -14,12 +14,13 @@ $desktop-width: "(min-width: 1200px)";
 //////////////////////////////////////////////////
 $text: #232323;
 $link: #0052EC;
+$gray: #2E323B;
 
 //////////////////////////////////////////////////
 /////////////////// Typography ///////////////////
 //////////////////////////////////////////////////
-$font-primary: "SFCompactText-Regular", Arial, Helvetica, sans-serif;
-$font-primary-medium: "SFCompactText-Medium", Arial, Helvetica, sans-serif;
-$font-primary-bold: "SFCompactText-Bold", Arial, Helvetica, sans-serif;
-$font-primary-semibold: "SFCompactText-Semibold", Arial, Helvetica, sans-serif;
+$font-primary: "SFCompactText-Regular", sans-serif;
+$font-primary-medium: "SFCompactText-Medium", sans-serif;
+$font-primary-bold: "SFCompactText-Bold", sans-serif;
+$font-primary-semibold: "SFCompactText-Semibold", sans-serif;
 $font-secondary: "Cormorant Garamond", serif;

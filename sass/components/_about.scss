@@ -1,5 +1,5 @@
 .about {
-    //margin: 85px 0 130px;
+    margin: 4em 0 5em;
 
     &__title {
         width: 50%;
@@ -24,7 +24,7 @@
     @media #{$tablet-width} {
         .container {
             width: 640px;
-            transform: translateY(-100px);
+            padding-bottom: 120px;
         }
 
         &__text {
