@@ -1,45 +1,13 @@
 .about {
-    margin: 4em 0 5em;
-
-    &__title {
-        width: 50%;
-        margin: 0 0 20px;
-    }
 
     &__text {
+        width: 70%;
+        margin: 0 auto 2em;
         font-family: $font-primary;
+        font-size: 1em;
     }
 
-    &__img {
-        display: block;
-        width: 160px;
-        height: 160px;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        background-color: rgba(#BDBDBD, 0.5);
-    }
-
-
-    @media #{$tablet-width} {
-        .container {
-            width: 640px;
-            padding-bottom: 120px;
-        }
-
-        &__text {
-            width: 80%;
-        }
-
-        &__img {
-            width: 290px;
-            height: 290px;
-            top: 100px;
-        }
-    }
-
-
-    @media #{$desktop-width} {
-
+    @media #{$mobile-width} {
+        width: 100%;
     }
 }

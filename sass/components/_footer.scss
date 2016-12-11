@@ -1,0 +1,55 @@
+.footer {
+    position: relative;
+    height: 85px;
+    padding: 10px 0;
+    background: #fff;
+
+    &__inner {
+        @include container;
+        @include clearfix;
+    }
+
+    &__link {
+        display: block;
+        font-family: $font-primary-semibold !important;
+        text-transform: none;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+    &__text {
+        margin: 0 auto 2em;
+        font-family: $font-primary;
+        font-size: 1em;
+    }
+
+
+    @media #{$tablet-width} {
+        height: 80px;
+
+        &__links {
+            text-align: left;
+        }
+
+        &__link {
+
+            &:first-child {
+                float: left;
+            }
+
+            &:last-child {
+                float: right;
+            }
+        }
+
+        &__text {
+            width: 80%;
+            //margin: 0 auto 30px;
+        }
+    }
+
+
+    @media #{$desktop-width} {
+
+    }
+}

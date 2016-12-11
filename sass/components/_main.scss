@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    height: calc(100vh - 140px);
+    min-height: 320px;
+    padding: 10px 0;
+
+    .main__inner {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    @media #{$tablet-width} {
+        height: calc(100vh - 160px);
+    }
+}

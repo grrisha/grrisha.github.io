@@ -76,6 +76,11 @@ h2 {
     }
 }
 
+
+.main .container {
+    margin: auto;
+}
+
 .clearfix {
     @include clearfix;
 }
