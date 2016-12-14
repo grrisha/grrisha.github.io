@@ -718,6 +718,41 @@ h2 {
   .work__about {
     width: calc(100% - 260px); } }
 
+.works-footer {
+  padding: 1.8em 0 4.2em;
+  background: #0052EC; }
+  .works-footer__inner {
+    display: block;
+    margin: 0 auto;
+    padding: 0 3%;
+    text-decoration: none;
+    color: #fff; }
+    @media (min-width: 700px) {
+      .works-footer__inner {
+        width: 88.3%;
+        padding: 0;
+        max-width: 960px; } }
+    @media (min-width: 1200px) {
+      .works-footer__inner {
+        width: 78.3%; } }
+    .works-footer__inner::after {
+      content: "";
+      display: table;
+      clear: both; }
+  .works-footer__title {
+    margin: 0 0 1.8em;
+    font-family: "SFCompactText-Semibold", sans-serif;
+    font-size: 1em; }
+  .works-footer__item-title {
+    margin: 0 0 10px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.255em;
+    line-height: 1; }
+  .works-footer__item-text {
+    margin: 0;
+    font-family: "SFCompactText-Regular", sans-serif;
+    font-size: 1.2em; }
+
 .footer {
   position: relative;
   height: 85px;

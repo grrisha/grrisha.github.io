@@ -1,0 +1,45 @@
+.works-footer {
+    padding: 1.8em 0 4.2em;
+    background: $link;
+
+    &__inner {
+        display: block;
+        @include container;
+        @include clearfix;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__title {
+        margin: 0 0 1.8em    ;
+        font-family: $font-primary-semibold;
+        font-size: 1em;
+    }
+
+    &__item {
+
+    }
+
+    &__item-title {
+        margin: 0 0 10px;
+        font-family: $font-secondary;
+        font-size: 2.255em;
+        line-height: 1;
+    }
+
+    &__item-text {
+        margin: 0;
+        font-family: $font-primary;
+        font-size: 1.2em;
+    }
+
+
+    @media #{$tablet-width} {
+
+    }
+
+
+    @media #{$desktop-width} {
+
+    }
+}
