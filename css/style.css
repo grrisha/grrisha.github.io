@@ -535,9 +535,11 @@ h2 {
   height: calc(100vh - 140px);
   min-height: 320px;
   padding: 10px 0; }
-  .main .main__inner {
+  .main__inner {
     width: 100%;
     margin: auto; }
+    .main__inner--works {
+      margin: initial; }
   @media (min-width: 700px) {
     .main {
       height: calc(100vh - 160px); } }
@@ -548,7 +550,12 @@ h2 {
     width: 50%;
     margin: 0 0 20px; }
   .home__text {
-    font-family: "SFCompactText-Regular", sans-serif; }
+    position: relative;
+    z-index: 999;
+    width: 200px;
+    font-family: "SFCompactText-Regular", sans-serif;
+    font-size: 1.5em;
+    font-style: italic; }
   .home__img {
     display: block;
     width: 160px;
@@ -562,7 +569,8 @@ h2 {
       width: 640px;
       padding-bottom: 120px; }
     .home__text {
-      width: 80%; }
+      width: 390px;
+      margin-left: 3em; }
     .home__img {
       width: 290px;
       height: 290px;
@@ -583,7 +591,7 @@ h2 {
   .works-nav__subtitle {
     margin: 0 auto;
     padding: 0 3%;
-    margin: 0.3em auto;
+    margin: 0.3em auto 2em;
     font-family: "SFCompactText-Semibold", sans-serif;
     font-size: 1em;
     color: #000;
@@ -599,11 +607,12 @@ h2 {
   .works-nav__item {
     display: block;
     margin-bottom: 10px;
-    padding: 30px 0 0;
+    padding: 10px 0;
     text-decoration: none; }
   .works-nav__item-inner {
     margin: 0 auto;
-    padding: 0 3%; }
+    padding: 0 3%;
+    padding: 0 10px; }
     @media (min-width: 700px) {
       .works-nav__item-inner {
         width: 88.3%;
@@ -615,22 +624,40 @@ h2 {
   .works-nav__item-title {
     margin: 0 0 10px;
     font-family: "Cormorant Garamond", serif;
-    font-size: 2.255em;
+    font-size: 1.86em;
     line-height: 1; }
   .works-nav__item-text {
     margin: 0;
     font-family: "SFCompactText-Regular", sans-serif;
     font-size: 1.2em;
     color: #2E323B; }
+  .works-nav__item:hover {
+    color: #fff;
+    background-color: #0052EC;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center; }
+    .works-nav__item:hover .works-nav__item-text {
+      color: #fff; }
+    .works-nav__item:hover .works-nav__item-inner {
+      background-color: rgba(0, 82, 236, 0.5); }
+  .works-nav__item--hemp:hover {
+    background-image: url(/img/hover-hemp.png); }
+  .works-nav__item--agent:hover {
+    background-image: url(/img/hover-agent.png); }
+  .works-nav__item--tikit:hover {
+    background-image: url(/img/hover-tikit.png); }
   @media (min-width: 700px) {
     .works-nav__item-inner {
       width: 70%;
       min-width: 510px;
-      max-width: 610px; } }
+      max-width: 610px;
+      padding: 0 10px; } }
   @media (min-width: 1200px) {
     .works-nav__item-inner {
       width: 100%;
-      max-width: 700px; } }
+      max-width: 700px;
+      padding: 0 10px; } }
 
 .work__subtitle {
   margin: 30px 0;
@@ -739,10 +766,15 @@ h2 {
       content: "";
       display: table;
       clear: both; }
+    .works-footer__inner:hover, .works-footer__inner:focus {
+      color: rgba(255, 255, 255, 0.5); }
+    .works-footer__inner:active {
+      color: rgba(255, 255, 255, 0.2); }
   .works-footer__title {
     margin: 0 0 1.8em;
     font-family: "SFCompactText-Semibold", sans-serif;
-    font-size: 1em; }
+    font-size: 1em;
+    color: #fff; }
   .works-footer__item-title {
     margin: 0 0 10px;
     font-family: "Cormorant Garamond", serif;
@@ -775,22 +807,27 @@ h2 {
       clear: both; }
   .footer__link {
     display: block;
-    font-family: "SFCompactText-Semibold", sans-serif !important;
+    font-family: "SFCompactText-Semibold", sans-serif;
     text-transform: none;
     text-decoration: none;
-    font-size: 1.5em; }
+    font-size: 1.2em; }
   .footer__text {
     margin: 0 auto 2em;
     font-family: "SFCompactText-Regular", sans-serif;
     font-size: 1em; }
+  @media (max-width: 699px) {
+    .footer__link {
+      margin-bottom: 10px; } }
   @media (min-width: 700px) {
     .footer {
       height: 80px; }
       .footer__links {
         text-align: left; }
-      .footer__link:first-child {
-        float: left; }
-      .footer__link:last-child {
-        float: right; }
+      .footer__link {
+        font-size: 1em; }
+        .footer__link:first-child {
+          float: left; }
+        .footer__link:last-child {
+          float: right; }
       .footer__text {
         width: 80%; } }

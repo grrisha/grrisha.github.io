@@ -7,7 +7,12 @@
     }
 
     &__text {
+        position: relative;
+        z-index: 999;
+        width: 200px;
         font-family: $font-primary;
+        font-size: 1.5em;
+        font-style: italic;
     }
 
     &__img {
@@ -28,7 +33,8 @@
         }
 
         &__text {
-            width: 80%;
+            width: 390px;
+            margin-left: 3em;
         }
 
         &__img {

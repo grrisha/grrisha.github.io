@@ -4,9 +4,13 @@
     min-height: 320px;
     padding: 10px 0;
 
-    .main__inner {
+    &__inner {
         width: 100%;
         margin: auto;
+
+        &--works {
+            margin: initial;
+        }
     }
 
 

@@ -8,16 +8,22 @@
         @include clearfix;
         text-decoration: none;
         color: #fff;
+
+        &:hover,
+        &:focus {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        &:active {
+            color: rgba(255, 255, 255, 0.2);
+        }
     }
 
     &__title {
         margin: 0 0 1.8em    ;
         font-family: $font-primary-semibold;
         font-size: 1em;
-    }
-
-    &__item {
-
+        color: #fff;
     }
 
     &__item-title {

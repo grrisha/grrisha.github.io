@@ -11,16 +11,23 @@
 
     &__link {
         display: block;
-        font-family: $font-primary-semibold !important;
+        font-family: $font-primary-semibold;
         text-transform: none;
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     &__text {
         margin: 0 auto 2em;
         font-family: $font-primary;
         font-size: 1em;
+    }
+
+
+    @media #{$mobile-width} {
+        &__link {
+            margin-bottom: 10px;
+        }
     }
 
 
@@ -32,6 +39,7 @@
         }
 
         &__link {
+            font-size: 1em;
 
             &:first-child {
                 float: left;
@@ -44,7 +52,6 @@
 
         &__text {
             width: 80%;
-            //margin: 0 auto 30px;
         }
     }
 
